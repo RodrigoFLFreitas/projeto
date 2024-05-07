@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color : black    ;
+  --tex-url    :  url(./assets/bg-desktop.jpg) ;
+  --stroke-color : rgba(255, 255, 255, 0.5);  
+  --suface-color : rgba(206, 232, 133, 0.5);
+  --suface-color-hover: rgba(18, 216, 51, 0.02);
+  --highlight-color : rgba(255, 255, 255, 0.2);
+  --switch-bg-url   : url(./assets/moon-stars.svg)
+}
+body{
+  /*
+  background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  */
+  /*background: color image repeat position/size */
+  background:var() top center/cover;
+  height: 100vh;
+}
+#teste {
+    width: 100%;
+  max-width: 588px;
+  margin: auto;
+  padding-top: 56px auto 0px;
+
+  padding: 0 24px;
+}
+#teste2 {
+  text-align: center;
+  padding: 24px;
+}
+#teste2 a {
+ 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  
+
+}
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 24px;
+
+    background: var(--suface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background 0.2s;
+}
+ul li a:hover{
+    background: var(-suface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
